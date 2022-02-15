@@ -1,0 +1,96 @@
+        <!DOCTYPE html>
+        <html lang="pt-BR">
+            <head>
+                <meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE-edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+                <title>Formulario Vacinação</title>
+            </head>
+            <body>
+                <header>
+                    <h1>Registro para Vacinação da COVID-19</h1>
+            </header>
+            
+            <section>
+                <form name="form1">
+                        <div id="corponome">
+                        <label  id="nome" value=''>Nome:</label>
+                        <label  id="sobrenome">Sobrenome:</label ><br>
+                        <input  type="text" id="texnome">
+                         <input id="inp2" type="text" >
+                       
+                    
+                        </div>
+                
+                        <div class="corpocpf">
+                        <label id="cpfname" for="forcpf">CPF:</label><br>
+                        <input id="cpf" autocomplete="off" maxlength="14" onkeyup="mascara()"/>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+
+                        <div class="corpodata">
+                            <label id="data" for="fordata">Data:</label><br>
+                            <input id="inpdata" type="date"/>
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                            <h2>Gênero</h2>
+
+                            <label class="container">Feminino
+                                <input type="radio" checked="checked" name="radio">
+                                <span class="checkmark"></span>
+                              </label>
+                              <label class="container">Masculino
+                                <input type="radio" name="radio">
+                                <span class="checkmark"></span>
+                              </label>
+                              <br>
+                              <br>
+                              <br>
+                              <div class="telefone">
+                                  <label id="tel"> Telefone<br>
+                                      <input id="telefone" type="tel">
+                                  </label>
+
+                              </div>
+
+                              <div class="email">
+                                  <label id="eml">  email<br> </label>
+                                  <input type="email" id="email">
+                                 
+
+                              </div>
+
+                              <div class="endereco">
+                                  <h4>Endereço</h4>
+                                  <label>
+                                      Rua/Avenida/Travessa:
+                            <input id="rua" type="text">
+                            Bairro:
+                            <input id="bairro" type="text">
+                            Cidade:
+                            <input id="cidade" type="text"> <br>
+                            <br>
+                            Estado:
+                            <input id="estado" type="text">
+
+                        </label>
+                        </div>
+                              
+                        <br>
+
+                        <button id="btn" type="button" onclick="validar()">Enviar!</button>            
+                    
+                </form>
+            </section>
+            
+            <script type="text/javascript" src="../javascript/script.js"></script>
+
+            </body>
+        </html>
+
